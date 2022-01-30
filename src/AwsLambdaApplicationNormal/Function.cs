@@ -26,7 +26,15 @@ namespace AwsLambdaApplicationNormal
 
             return new Casing(data?.ToLower(), data?.ToUpper());
         }
+
+        public int AnnotatedHandlerAdd(Add addends, ILambdaContext context)
+        {
+            return addends.addend1 + addends.addend2;
+        }
+
+
     }
 
     public record Casing(string Lower, string Upper);
+    public record Add(int addend1, int addend2);
 }

@@ -21,6 +21,26 @@
           ]
         }
       }
+    },
+    "AddFunction": {
+      "Type": "AWS::Serverless::Function",
+      "Metadata": {
+        "Tool": "Amazon.Lambda.Annotations"
+      },
+      "Properties": {
+        "MemorySize": 256,
+        "Timeout": 30,
+        "Policies": [
+          "AWSLambdaBasicExecutionRole"
+        ],
+        "PackageType": "Image",
+        "ImageUri": ".",
+        "ImageConfig": {
+          "Command": [
+            "AwsLambdaApplication::AwsLambdaApplication.Lambda_AnnotatedHandlerAdd_Generated::AnnotatedHandlerAdd"
+          ]
+        }
+      }
     }
   }
 }

@@ -20,5 +20,14 @@ public class Lambda
         var rev = svc.ReverseString(input);
         return new Casing(rev?.ToLower(), rev?.ToUpper());
     }
+
+    [LambdaFunction(Name = "AddFunction", PackageType = LambdaPackageType.Image)]
+    public int AnnotatedHandlerAdd(Add addends)
+    {
+        return addends.addend1 + addends.addend2;
+    }
+
+
 }
 public record Casing(string Lower, string Upper);
+public record Add(int addend1, int addend2);
