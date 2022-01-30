@@ -1,0 +1,41 @@
+Demo steps for App Runner
+
+1) Install .NET Deploy Tool
+
+dotnet tool install -g aws.deploy.cli
+
+Command for deploy tool is 
+
+dotnet aws
+
+3) Create a new web application
+
+mkdir src
+cd src
+mkdir aws-app
+cd aws-app
+dotnet new webapp
+cd ..
+dotnet new sln
+dotnet sln add aws-app
+cd aws-app
+
+4) Deploy project
+
+dotnet aws deploy
+
+
+
+
+------------------------------------------------
+CREATE Lambda Project
+
+(Be in src)
+
+mkdir aws-lambda
+cd aws-lambda
+
+dotnet new lambda.EmptyFunction
+
+
+
