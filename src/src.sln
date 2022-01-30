@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aws-app", "aws-app\aws-app.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwsLambdaApplication", "AwsLambdaApplication\AwsLambdaApplication.csproj", "{27E93916-E73B-48AF-A3CA-A9F2EBC327C3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwsLambdaApplicationNormal", "AwsLambdaApplicationNormal\AwsLambdaApplicationNormal.csproj", "{AB8082C6-44A4-4BAF-8E25-A5254077CFC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{27E93916-E73B-48AF-A3CA-A9F2EBC327C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27E93916-E73B-48AF-A3CA-A9F2EBC327C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27E93916-E73B-48AF-A3CA-A9F2EBC327C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB8082C6-44A4-4BAF-8E25-A5254077CFC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8082C6-44A4-4BAF-8E25-A5254077CFC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8082C6-44A4-4BAF-8E25-A5254077CFC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8082C6-44A4-4BAF-8E25-A5254077CFC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
