@@ -1,0 +1,10 @@
+{
+  "DeploymentProjects": [
+    {
+      "Path": "..\\aws-app.Deployment"
+    },
+    {
+      "Path": "..\\aws-app.Deployment"
+    }
+  ]
+}

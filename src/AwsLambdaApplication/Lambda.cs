@@ -13,22 +13,12 @@ using System.Threading.Tasks;
 namespace AwsLambdaApplication;
 
 
-    public class Lambda
-    {
-        [LambdaFunction(Name = "ReverseFunction", PackageType = LambdaPackageType.Image)]
-        public Casing AnnotatedHandler(string input, [FromServices] ITestService svc)
-        {
-            var rev = svc.ReverseString(input);
-            return new Casing(rev?.ToLower(), rev?.ToUpper());
-        }
-
-        [LambdaFunction(Name = "AddFunction", PackageType = LambdaPackageType.Image)]
-        public int AnnotatedHandlerAdd(Add addends)
-        {
-            return addends.addend1 + addends.addend2;
-        }
+public class Lambda
+{
 
 
-    }
-    public record Casing(string Lower, string Upper);
-    public record Add(int addend1, int addend2);
+
+
+}
+public record Casing(string Lower, string Upper);
+public record Add(int addend1, int addend2);

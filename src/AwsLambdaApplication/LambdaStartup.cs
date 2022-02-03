@@ -14,5 +14,6 @@ public class LambdaStartup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddScoped<ITestService, TestService>();
+        services.AddScoped<IDataService, DataService>();
     }
 }

@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwsLambdaApplication", "Aws
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwsLambdaApplicationNormal", "AwsLambdaApplicationNormal\AwsLambdaApplicationNormal.csproj", "{AB8082C6-44A4-4BAF-8E25-A5254077CFC2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{985A5769-FF8E-4DF6-970E-41D00E2C1ACA}"
+	ProjectSection(SolutionItems) = preProject
+		..\demosteps.txt = ..\demosteps.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

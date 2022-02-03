@@ -38,4 +38,15 @@ cd aws-lambda
 dotnet new lambda.EmptyFunction
 
 
+    [LambdaFunction(Name = "ReverseFunction", PackageType = LambdaPackageType.Image)]
+    public Casing AnnotatedHandler(string input, [FromServices] ITestService svc)
+    {
+        var rev = svc.ReverseString(input);
+        return new Casing(rev?.ToLower(), rev?.ToUpper());
+    }
 
+    [LambdaFunction(Name = "AddFunction", PackageType = LambdaPackageType.Image)]
+    public int AnnotatedHandlerAdd(Add addends)
+    {
+        return addends.addend1 + addends.addend2;
+    }
